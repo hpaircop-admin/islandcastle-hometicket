@@ -54,6 +54,20 @@ h2{margin:0 0 14px;font-size:20px;font-weight:800;letter-spacing:-.03em}
 .buy{position:sticky;top:16px}
 .buy .label{font-size:12px;font-weight:800;letter-spacing:.04em;color:#5a7d1c;margin-bottom:8px}
 .foot{padding:30px 20px 90px;border-top:1px solid rgba(23,48,46,.12);font-size:12.5px;color:#5d6b68;line-height:1.9}
+.tbl{width:100%;border-collapse:collapse;font-size:14px;margin:0}
+.tbl th,.tbl td{border:1px solid rgba(23,48,46,.15);padding:11px 8px;text-align:center}
+.tbl th{background:#17302e;color:#fff;font-weight:700}
+.tbl td.k{background:#f2efe8;font-weight:700;color:#17302e}
+.tbl-wrap{overflow-x:auto;border-radius:10px}
+.flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;align-items:start;gap:6px;margin:6px 0 0;padding:0;list-style:none}
+.flow li{text-align:center;font-size:13px;line-height:1.5;color:#5d6b68}
+.flow b{display:block;color:#17302e;font-size:14px;margin:8px 0 2px}
+.flow .ic{width:62px;height:62px;border-radius:50%;background:#17302e;color:#fff;font-size:26px;display:flex;align-items:center;justify-content:center;margin:0 auto}
+.flow .ar{color:#9aa8a5;font-size:14px;padding-top:22px}
+.tips{margin:18px 0 0;padding:0;list-style:none;font-size:14px}
+.tips li{padding:6px 0 6px 14px;position:relative;line-height:1.7}
+.tips li:before{content:"-";position:absolute;left:0;color:#5d6b68}
+@media(max-width:560px){.flow{grid-template-columns:1fr 1fr;row-gap:18px}.flow .ar{display:none}.tbl{font-size:12px}}
 @media(max-width:860px){.layout{grid-template-columns:1fr;gap:26px}.buy{position:static;order:-1}.hero{height:240px}.hero-copy{bottom:20px}}
 </style>
 </head>
@@ -82,12 +96,52 @@ h2{margin:0 0 14px;font-size:20px;font-weight:800;letter-spacing:-.03em}
         <div><dt>이용 요일</dt><dd>금 · 토 · 일 · 월 (워터파크 오픈일)</dd></div>
       </dl>
 
-      <h2 style="margin-top:34px">구매 방법</h2>
-      <ol class="steps">
-        <li>이름과 연락처를 입력하고 휴대폰 인증번호로 본인확인을 합니다.</li>
-        <li>인원을 선택하고 온라인으로 결제합니다.</li>
-        <li>결제가 끝나면 입장권(핀번호)을 화면에서 바로 확인하고, 문자로도 받습니다.</li>
+      <h2 style="margin-top:34px">운영 시간 안내</h2>
+      <dl class="facts" style="margin:0 0 16px">
+        <div><dt>운영 기간</dt><dd>2026.09.01(화) ~ 2026.12.24(목)</dd></div>
+        <div><dt>운영 요일</dt><dd>금 · 토 · 일 · 월</dd></div>
+      </dl>
+      <div class="tbl-wrap"><table class="tbl">
+        <tr><th>구분</th><th>매표소 / 사우나</th><th>찜질방 / 바데풀</th><th>워터파크 (실내)</th><th>워터파크 (실외)</th></tr>
+        <tr><td class="k">운영 시간</td><td>09:00 ~ 18:00</td><td>09:00 ~ 17:30</td><td>10:00 ~ 17:30</td><td>운영 안 함</td></tr>
+      </table></div>
+      <p class="note" style="margin-top:10px">운영 시간은 시설 사정에 따라 바뀔 수 있습니다.</p>
+
+      <h2 style="margin-top:34px">티켓 이용 방법</h2>
+      <ol class="flow">
+        <li><div class="ic">🎟️</div><b>티켓 구매하기</b>휴대폰 본인확인 후<br>온라인 결제</li>
+        <li class="ar">▶</li>
+        <li><div class="ic">📱</div><b>바코드 수신</b>결제 직후 문자로<br>입장권 링크 발송</li>
+        <li class="ar">▶</li>
+        <li><div class="ic">🔖</div><b>바코드 제시</b>링크 화면의 바코드를<br>현장에서 제시</li>
+        <li class="ar">▶</li>
+        <li><div class="ic">✅</div><b>입장</b>확인 후<br>워터파크 이용</li>
       </ol>
+      <ul class="tips">
+        <li>입장권은 결제 완료 화면에서도 바로 확인할 수 있습니다.</li>
+        <li>캡처본은 사용할 수 없습니다. 문자로 받은 링크의 바코드 화면(원본)을 제시해 주세요.</li>
+        <li>이용 가능 요일은 금 · 토 · 일 · 월입니다 (워터파크 오픈일).</li>
+        <li>문자를 받지 못하셨다면 031-339-2999로 문의해 주세요.</li>
+      </ul>
+      <h2 style="margin-top:34px">주의사항</h2>
+      <ul class="tips" style="margin-top:0">
+        <li>워터파크 입장 시 수영복을 착용해 주세요 (찜질복 불가). 바데풀은 수영모도 필수입니다.</li>
+        <li>36개월 미만 영유아는 무료 입장입니다 (증빙 서류 지참).</li>
+        <li>신장 120cm 이하 어린이는 구명조끼를 착용해야 하며, 어린이는 보호자와 함께 이용해 주세요.</li>
+        <li>음식물(병·캔 음료, 버너, 돗자리 포함) 반입은 금지입니다 (생수, 이유식, 환자식은 가능).</li>
+        <li>퇴장 후 재입장은 불가합니다.</li>
+        <li>락커 키를 분실하면 25,000원이 부과되며, 습득된 분실물은 24시간 후 폐기됩니다.</li>
+        <li>수용 인원을 넘거나 기상 상황에 따라 입장이 제한될 수 있습니다.</li>
+      </ul>
+
+      <h2 style="margin-top:34px">취소 · 환불 안내</h2>
+      <ul class="tips" style="margin-top:0">
+        <li>사용하지 않은 티켓은 100% 환불됩니다.</li>
+        <li>입장(사용)한 티켓은 환불되지 않습니다.</li>
+        <li>여러 장을 구매해 일부만 사용했다면, 사용하지 않은 장수만 부분 환불됩니다.</li>
+        <li>환불은 카카오톡 또는 고객센터(031-339-2999)로 접수해 주세요. 결제수단과 같은 방법으로 환불되며, 카드는 카드사에 따라 처리 기간이 다를 수 있습니다.</li>
+        <li>본 상품은 재판매가 불가합니다. 재판매가 적발되면 전량 취소될 수 있습니다.</li>
+      </ul>
       <p class="note">이용 방법과 사용 기간, 취소·환불 등 자세한 내용은 전화(031-339-2999) 또는 카카오톡으로 문의해 주세요.</p>
     </div>
 
