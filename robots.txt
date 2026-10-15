@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /ticket.html
+
+Sitemap: https://islandcastle.hhcompany.co.kr/sitemap.xml
